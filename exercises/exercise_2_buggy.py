@@ -12,8 +12,24 @@ a list of numbers, but it has a bug.
    empty list the way you would want it to?
 """
 
+# Prompt: Fix this?
+# How to improve this prompt?
+# Looking for:
+# - Adding the error message
+# - Adding how it was ran
+# - Adding what has already been tried to fix it
 
+# Use the chat as a rubbing duck session
+
+# When bug fixing we can improve our suggestions by:
+# - Use TDD, if there is an expected value write a unit test and have it open next to the buggy code
+# - Improve your prompt, don't just say fix this. You should provide how you ran the function and the output at the very least.
+# - Matt Pocock has some great skills to look at
+
+# Answer key
 def average(numbers):
+    if not numbers:
+        return 0
     total = 0
     for n in numbers:
         total += n
@@ -21,4 +37,14 @@ def average(numbers):
 
 
 print(average([1, 2, 3, 4, 5]))
-print(average([]))  # This line raises ZeroDivisionError.
+print(average([]))
+
+# def average(numbers):
+#     total = 0
+#     for n in numbers:
+#         total += n
+#     return total / len(numbers)
+
+
+# print(average([1, 2, 3, 4, 5]))
+# print(average([]))  # This line raises ZeroDivisionError.
