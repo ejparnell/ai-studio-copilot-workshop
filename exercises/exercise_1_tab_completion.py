@@ -67,8 +67,6 @@ def test_normalize_email_rows():
 # Contract: state constraints and edge cases in a compact docstring or comment.
 # Example: put a representative call or test nearby.
 # Neighborhood: open the few files that define the behavior or demonstrate the repository pattern.
-# Prefix: reject and type the first discriminating token to steer the next prediction.
-# Verify: accept partially where useful; read, run, test, and review before keeping.
 
 # Answer key
 # def square(n):
